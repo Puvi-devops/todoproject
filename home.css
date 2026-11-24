@@ -1,0 +1,16 @@
+.home-card {
+    background: #e8efff;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #2563eb;
+}
+
+.home-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.home-card p {
+    line-height: 1.7;
+}
