@@ -1,53 +1,8 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Tasks - Todo App</title>
-    <link rel="stylesheet" href="../css/view-tasks.css">
-</head>
-<body>
-
-<header>
-    <h1>My Todo App</h1>
-    <p>Plan Your Day | Complete Your Tasks</p>
-</header>
-
-<nav>
-    <a href="home.html">Home</a>
-    <a href="add-task.html">Add Task</a>
-    <a href="view-tasks.html" class="active">View Tasks</a>
-    <a href="statistics.html">Statistics</a>
-    <a href="settings.html">Settings</a>
-    <a href="about.html">About</a>
-</nav>
-
-<div class="container">
-    <h2>Your Tasks</h2>
-
-    <div class="task">
-        <input type="checkbox">
-        Complete HTML project
-    </div>
-
-    <div class="task">
-        <input type="checkbox">
-        Learn CSS
-    </div>
-
-    <div class="task">
-        <input type="checkbox">
-        Prepare presentation
-    </div>
-
-    <div class="task">
-        <input type="checkbox">
-        Upload project to GitHub
-    </div>
-</div>
-
-<footer>© 2026 My Todo App</footer>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#635bff"><title>My tasks · FocusFlow</title><link rel="stylesheet" href="common.css"><link rel="stylesheet" href="view-task.css"></head>
+<body class=""><div class="app-shell"><aside class="sidebar"><a class="brand" href="home.html"><span class="brand-mark">✓</span><span class="brand-name">focus<span>flow</span></span></a><div><div class="nav-label">WORKSPACE</div><nav class="nav-list"><a class="nav-link " href="home.html"><span class="nav-icon">⌂</span>Overview</a><a class="nav-link " href="add-task.html"><span class="nav-icon">＋</span>Add task</a><a class="nav-link active" href="view-task.html"><span class="nav-icon">▤</span>My tasks</a><a class="nav-link " href="statistics.html"><span class="nav-icon">▥</span>Statistics</a><a class="nav-link " href="settings.html"><span class="nav-icon">⚙</span>Settings</a><a class="nav-link " href="about.html"><span class="nav-icon">ⓘ</span>About</a></nav></div><div class="sidebar-bottom"><div class="mini-note"><strong>✦ Make today count</strong>Small steps, consistent progress. Keep moving toward what matters.</div></div></aside>
+<main class="main"><div class="topbar"><div class="greeting"><small id="todayLabel">YOUR PERSONAL WORKSPACE</small><h1>My tasks</h1></div><div class="top-actions"><button class="icon-btn" id="themeQuick" title="Theme" onclick="document.body.classList.toggle('dark')">◐</button><div class="avatar">F</div></div></div>
+<div class="page-heading"><div><div class="eyebrow">YOUR PERSONAL TASK LIST</div><h2>All tasks, one place.</h2><p>Keep track of what matters and celebrate every finish.</p></div><a class="btn btn-primary" href="add-task.html">＋ Add task</a></div>
+<div class="toolbar"><input class="search-input" id="taskSearch" type="search" placeholder="⌕  Search tasks…"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="pending">Pending</button><button class="filter-btn" data-filter="completed">Completed</button><button class="filter-btn" data-filter="today">Due today</button></div>
+<section class="card"><div class="section-head"><h3>Your task list</h3><span class="muted" id="taskCount">0 tasks</span></div><div class="task-list" id="allTasks"></div></section>
+<footer>Made for a more focused day · FocusFlow © 2026</footer></main></div><script src="app.js"></script></body></html>

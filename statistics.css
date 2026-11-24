@@ -1,21 +1,4 @@
-
-.statistics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.stat-card {
-    flex: 1;
-    min-width: 130px;
-    padding: 25px;
-    text-align: center;
-    background: #e8efff;
-    border-radius: 10px;
-}
-
-.stat-card h3 {
-    font-size: 32px;
-    color: #2563eb;
-    margin-bottom: 10px;
-}
+/* Statistics page styles */
+#weeklyChart { min-height: 190px; }
+#weeklyChart .bar { transition: height .35s ease; }
+#weeklyChart .bar-column:hover .bar { filter: brightness(1.12); }

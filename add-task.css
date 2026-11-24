@@ -1,33 +1,6 @@
-form {
-    max-width: 550px;
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    font-family: Arial;
-}
-
-textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-}
+/* Add task page styles */
+.form-card { padding: 28px; }
+#taskForm .field input, #taskForm .field textarea, #taskForm .field select { transition: border-color .2s, box-shadow .2s; }
+#taskForm .field textarea { min-height: 120px; }
+#saveTask { min-width: 135px; }
+@media(max-width:760px) { .form-card { padding: 18px; } }

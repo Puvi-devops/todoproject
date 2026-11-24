@@ -1,44 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Task - Todo App</title>
-    <link rel="stylesheet" href="../css/add-task.css">
-</head>
-<body>
-<header>
-    <h1>My Todo App</h1>
-    <p>Plan Your Day | Complete Your Tasks</p>
-</header>
-
-<nav>
-    <a href="home.html">Home</a>
-    <a href="add-task.html" class="active">Add Task</a>
-    <a href="view-tasks.html">View Tasks</a>
-    <a href="statistics.html">Statistics</a>
-    <a href="settings.html">Settings</a>
-    <a href="about.html">About</a>
-</nav>
-
-<div class="container">
-    <h2>Add a New Task</h2>
-
-    <form>
-        <label>Task Name</label>
-        <input type="text" placeholder="Enter your task">
-
-        <label>Description</label>
-        <textarea placeholder="Enter description"></textarea>
-
-        <label>Due Date</label>
-        <input type="date">
-
-        <button type="button">Add Task</button>
-    </form>
-</div>
-
-<footer>© 2026 My Todo App</footer>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#635bff"><title>Add a task · FocusFlow</title><link rel="stylesheet" href="common.css"><link rel="stylesheet" href="add-task.css"></head>
+<body class=""><div class="app-shell"><aside class="sidebar"><a class="brand" href="home.html"><span class="brand-mark">✓</span><span class="brand-name">focus<span>flow</span></span></a><div><div class="nav-label">WORKSPACE</div><nav class="nav-list"><a class="nav-link " href="home.html"><span class="nav-icon">⌂</span>Overview</a><a class="nav-link active" href="add-task.html"><span class="nav-icon">＋</span>Add task</a><a class="nav-link " href="view-task.html"><span class="nav-icon">▤</span>My tasks</a><a class="nav-link " href="statistics.html"><span class="nav-icon">▥</span>Statistics</a><a class="nav-link " href="settings.html"><span class="nav-icon">⚙</span>Settings</a><a class="nav-link " href="about.html"><span class="nav-icon">ⓘ</span>About</a></nav></div><div class="sidebar-bottom"><div class="mini-note"><strong>✦ Make today count</strong>Small steps, consistent progress. Keep moving toward what matters.</div></div></aside>
+<main class="main"><div class="topbar"><div class="greeting"><small id="todayLabel">YOUR PERSONAL WORKSPACE</small><h1>Add a task</h1></div><div class="top-actions"><button class="icon-btn" id="themeQuick" title="Theme" onclick="document.body.classList.toggle('dark')">◐</button><div class="avatar">F</div></div></div>
+<div class="page-heading"><div><div class="eyebrow">CAPTURE YOUR NEXT STEP</div><h2 id="formTitle">Create a task</h2><p>Break your plans into clear, manageable actions.</p></div></div>
+<section class="card form-card"><form id="taskForm"><div class="form-grid">
+<div class="field full"><label for="title">Task name *</label><input id="title" name="title" type="text" maxlength="100" placeholder="e.g. Prepare project presentation" required></div>
+<div class="field full"><label for="description">Description</label><textarea id="description" name="description" placeholder="Add notes, details or next steps…"></textarea></div>
+<div class="field"><label for="dueDate">Due date</label><input id="dueDate" name="dueDate" type="date"></div>
+<div class="field"><label for="priority">Priority</label><select id="priority" name="priority"><option value="medium">Medium</option><option value="high">High</option><option value="low">Low</option></select></div>
+<div class="field full"><label for="category">Category</label><select id="category" name="category"><option>General</option><option>Work</option><option>Personal</option><option>Study</option><option>Health</option><option>Shopping</option></select></div>
+</div><div class="form-actions"><button class="btn btn-primary" id="saveTask" type="submit">＋ Add task</button><a class="btn btn-soft" href="view-task.html">Cancel</a></div></form></section>
+<footer>Made for a more focused day · FocusFlow © 2026</footer></main></div><script src="app.js"></script></body></html>

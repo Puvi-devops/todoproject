@@ -1,12 +1,4 @@
-
-.setting-card {
-    background: #e8efff;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-}
-
-.setting-card input {
-    margin-right: 10px;
-    accent-color: #2563eb;
-}
+/* Settings page styles */
+.setting-row { transition: background .18s ease; }
+.setting-row:hover { background: var(--surface-2); }
+#clearTasks { white-space: nowrap; }

@@ -1,43 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Todo App</title>
-    <link rel="stylesheet" href="../css/home.css">
-</head>
-<body>
-
-<header>
-    <h1>My Todo App</h1>
-    <p>Plan Your Day | Complete Your Tasks</p>
-</header>
-
-<nav>
-    <a href="home.html" class="active">Home</a>
-    <a href="add-task.html">Add Task</a>
-    <a href="view-tasks.html">View Tasks</a>
-    <a href="statistics.html">Statistics</a>
-    <a href="settings.html">Settings</a>
-    <a href="about.html">About</a>
-</nav>
-
-<div class="container">
-    <h2>Welcome to My Todo App!</h2>
-    <p>Organize your daily activities and manage your time effectively.</p>
-
-    <div class="home-card">
-        <h3>Stay Organized!</h3>
-        <p>Make a list of your tasks and complete them one by one.</p>
-    </div>
-
-    <div class="home-card">
-        <h3>Your Daily Reminder</h3>
-        <p>Small steps every day lead to big achievements.</p>
-    </div>
-</div>
-
-<footer>© 2026 My Todo App</footer>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#635bff"><title>Good day · FocusFlow</title><link rel="stylesheet" href="common.css"><link rel="stylesheet" href="home.css"></head>
+<body class=""><div class="app-shell"><aside class="sidebar"><a class="brand" href="home.html"><span class="brand-mark">✓</span><span class="brand-name">focus<span>flow</span></span></a><div><div class="nav-label">WORKSPACE</div><nav class="nav-list"><a class="nav-link active" href="home.html"><span class="nav-icon">⌂</span>Overview</a><a class="nav-link " href="add-task.html"><span class="nav-icon">＋</span>Add task</a><a class="nav-link " href="view-task.html"><span class="nav-icon">▤</span>My tasks</a><a class="nav-link " href="statistics.html"><span class="nav-icon">▥</span>Statistics</a><a class="nav-link " href="settings.html"><span class="nav-icon">⚙</span>Settings</a><a class="nav-link " href="about.html"><span class="nav-icon">ⓘ</span>About</a></nav></div><div class="sidebar-bottom"><div class="mini-note"><strong>✦ Make today count</strong>Small steps, consistent progress. Keep moving toward what matters.</div></div></aside>
+<main class="main"><div class="topbar"><div class="greeting"><small id="todayLabel">YOUR PERSONAL WORKSPACE</small><h1>Good day</h1></div><div class="top-actions"><button class="icon-btn" id="themeQuick" title="Theme" onclick="document.body.classList.toggle('dark')">◐</button><div class="avatar">F</div></div></div>
+<div class="page-heading"><div><div class="eyebrow">YOUR DAY AT A GLANCE</div><h2>Let's make progress.</h2><p>A little progress each day adds up to big results.</p></div><a class="btn btn-primary" href="add-task.html">＋ New task</a></div>
+<section class="stats-grid">
+<div class="stat-card"><div class="stat-top">Total tasks <span class="stat-icon">▤</span></div><div class="stat-value" id="totalTasks">0</div><div class="stat-foot">Across your workspace</div></div>
+<div class="stat-card"><div class="stat-top">Completed <span class="stat-icon">✓</span></div><div class="stat-value" id="completedTasks">0</div><div class="stat-foot">Tasks you've finished</div></div>
+<div class="stat-card"><div class="stat-top">In progress <span class="stat-icon">◷</span></div><div class="stat-value" id="pendingTasks">0</div><div class="stat-foot">Ready for your attention</div></div>
+<div class="stat-card"><div class="stat-top">Overdue <span class="stat-icon">!</span></div><div class="stat-value" id="overdueTasks">0</div><div class="stat-foot">Past their due date</div></div>
+</section>
+<div class="content-grid"><section class="card"><div class="section-head"><h3>Up next</h3><a class="muted" style="font-size:12px" href="view-task.html">View all →</a></div><div class="task-list" id="homeTaskList"></div></section>
+<section class="card"><div class="section-head"><h3>Your progress</h3><span class="stat-icon">↗</span></div><div class="stat-value">0%</div><p class="muted" style="font-size:12px;margin:0">Completion rate</p><div class="progress-wrap"><div class="progress-label"><span id="progressCaption">0 of 0 tasks completed</span><strong id="progressPercent">0%</strong></div><div class="progress-line"><div class="progress-fill" id="progressFill" style="width:0%"></div></div></div><div style="padding:15px;border-radius:13px;background:var(--primary-soft);color:var(--primary);font-size:12px;line-height:1.6">✦ <strong>Keep your momentum.</strong><br>Focus on one task at a time. You've got this.</div></section></div>
+<footer>Made for a more focused day · FocusFlow © 2026</footer></main></div><script src="app.js"></script></body></html>

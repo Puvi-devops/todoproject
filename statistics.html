@@ -1,55 +1,13 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Todo App</title>
-    <link rel="stylesheet" href="../css/statistics.css">
-</head>
-<body>
-
-<header>
-    <h1>My Todo App</h1>
-    <p>Plan Your Day | Complete Your Tasks</p>
-</header>
-
-<nav>
-    <a href="home.html">Home</a>
-    <a href="add-task.html">Add Task</a>
-    <a href="view-tasks.html">View Tasks</a>
-    <a href="statistics.html" class="active">Statistics</a>
-    <a href="settings.html">Settings</a>
-    <a href="about.html">About</a>
-</nav>
-
-<div class="container">
-    <h2>Task Statistics</h2>
-
-    <div class="statistics">
-        <div class="stat-card">
-            <h3>10</h3>
-            <p>Total Tasks</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>6</h3>
-            <p>Completed</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>4</h3>
-            <p>Pending</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <h3>Keep Going!</h3>
-        <p>You are making progress. Complete your remaining tasks!</p>
-    </div>
-</div>
-
-<footer>© 2026 My Todo App</footer>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#635bff"><title>Statistics · FocusFlow</title><link rel="stylesheet" href="common.css"><link rel="stylesheet" href="statistics.css"></head>
+<body class=""><div class="app-shell"><aside class="sidebar"><a class="brand" href="home.html"><span class="brand-mark">✓</span><span class="brand-name">focus<span>flow</span></span></a><div><div class="nav-label">WORKSPACE</div><nav class="nav-list"><a class="nav-link " href="home.html"><span class="nav-icon">⌂</span>Overview</a><a class="nav-link " href="add-task.html"><span class="nav-icon">＋</span>Add task</a><a class="nav-link " href="view-task.html"><span class="nav-icon">▤</span>My tasks</a><a class="nav-link active" href="statistics.html"><span class="nav-icon">▥</span>Statistics</a><a class="nav-link " href="settings.html"><span class="nav-icon">⚙</span>Settings</a><a class="nav-link " href="about.html"><span class="nav-icon">ⓘ</span>About</a></nav></div><div class="sidebar-bottom"><div class="mini-note"><strong>✦ Make today count</strong>Small steps, consistent progress. Keep moving toward what matters.</div></div></aside>
+<main class="main"><div class="topbar"><div class="greeting"><small id="todayLabel">YOUR PERSONAL WORKSPACE</small><h1>Statistics</h1></div><div class="top-actions"><button class="icon-btn" id="themeQuick" title="Theme" onclick="document.body.classList.toggle('dark')">◐</button><div class="avatar">F</div></div></div>
+<div class="page-heading"><div><div class="eyebrow">MEASURE YOUR MOMENTUM</div><h2>Progress that adds up.</h2><p>Your productivity overview, based on your saved tasks.</p></div></div>
+<section class="stats-grid">
+<div class="stat-card"><div class="stat-top">Total tasks <span class="stat-icon">▤</span></div><div class="stat-value" id="statTotal">0</div><div class="stat-foot">All tasks created</div></div>
+<div class="stat-card"><div class="stat-top">Completed <span class="stat-icon">✓</span></div><div class="stat-value" id="statDone">0</div><div class="stat-foot">Finished tasks</div></div>
+<div class="stat-card"><div class="stat-top">Pending <span class="stat-icon">◷</span></div><div class="stat-value" id="statPending">0</div><div class="stat-foot">Still to do</div></div>
+<div class="stat-card"><div class="stat-top">Completion <span class="stat-icon">↗</span></div><div class="stat-value" id="statRate">0%</div><div class="stat-foot">Overall completion rate</div></div>
+</section>
+<div class="content-grid"><section class="card"><div class="section-head"><h3>Completed this week</h3><span class="muted" style="font-size:11px">Last 7 days</span></div><div class="chart-bars" id="weeklyChart"></div></section><section class="card"><div class="section-head"><h3>Overall progress</h3><span class="stat-icon">✦</span></div><div class="stat-value" id="statsProgressText">0%</div><div class="progress-wrap"><div class="progress-line"><div class="progress-fill" id="statsProgress" style="width:0%"></div></div></div><p class="muted" style="font-size:12px">Uncompleted high-priority tasks</p><div class="stat-value" id="highPriority">0</div></section></div>
+<footer>Made for a more focused day · FocusFlow © 2026</footer></main></div><script src="app.js"></script></body></html>

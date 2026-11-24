@@ -1,54 +1,11 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings - Todo App</title>
-    <link rel="stylesheet" href="../css/settings.css">
-</head>
-<body>
-
-<header>
-    <h1>My Todo App</h1>
-    <p>Plan Your Day | Complete Your Tasks</p>
-</header>
-
-<nav>
-    <a href="home.html">Home</a>
-    <a href="add-task.html">Add Task</a>
-    <a href="view-tasks.html">View Tasks</a>
-    <a href="statistics.html">Statistics</a>
-    <a href="settings.html" class="active">Settings</a>
-    <a href="about.html">About</a>
-</nav>
-
-<div class="container">
-    <h2>Settings</h2>
-
-    <div class="setting-card">
-        <label>
-            <input type="checkbox">
-            Enable Notifications
-        </label>
-    </div>
-
-    <div class="setting-card">
-        <label>
-            <input type="checkbox">
-            Dark Mode
-        </label>
-    </div>
-
-    <div class="setting-card">
-        <label>
-            <input type="checkbox">
-            Show Completed Tasks
-        </label>
-    </div>
-</div>
-
-<footer>© 2026 My Todo App</footer>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#635bff"><title>Settings · FocusFlow</title><link rel="stylesheet" href="common.css"><link rel="stylesheet" href="settings.css"></head>
+<body class=""><div class="app-shell"><aside class="sidebar"><a class="brand" href="home.html"><span class="brand-mark">✓</span><span class="brand-name">focus<span>flow</span></span></a><div><div class="nav-label">WORKSPACE</div><nav class="nav-list"><a class="nav-link " href="home.html"><span class="nav-icon">⌂</span>Overview</a><a class="nav-link " href="add-task.html"><span class="nav-icon">＋</span>Add task</a><a class="nav-link " href="view-task.html"><span class="nav-icon">▤</span>My tasks</a><a class="nav-link " href="statistics.html"><span class="nav-icon">▥</span>Statistics</a><a class="nav-link active" href="settings.html"><span class="nav-icon">⚙</span>Settings</a><a class="nav-link " href="about.html"><span class="nav-icon">ⓘ</span>About</a></nav></div><div class="sidebar-bottom"><div class="mini-note"><strong>✦ Make today count</strong>Small steps, consistent progress. Keep moving toward what matters.</div></div></aside>
+<main class="main"><div class="topbar"><div class="greeting"><small id="todayLabel">YOUR PERSONAL WORKSPACE</small><h1>Settings</h1></div><div class="top-actions"><button class="icon-btn" id="themeQuick" title="Theme" onclick="document.body.classList.toggle('dark')">◐</button><div class="avatar">F</div></div></div>
+<div class="page-heading"><div><div class="eyebrow">MAKE IT YOURS</div><h2>Preferences</h2><p>Adjust your workspace to work the way you do.</p></div></div>
+<section class="card" style="max-width:780px"><div class="section-head"><h3>Appearance & behaviour</h3></div>
+<div class="setting-row"><div><strong>Dark appearance</strong><p>Switch between light and dark workspace themes.</p></div><label class="switch"><input type="checkbox" id="darkMode"><span></span></label></div>
+<div class="setting-row"><div><strong>Show completed tasks</strong><p>Include finished tasks in your task list.</p></div><label class="switch"><input type="checkbox" id="showCompleted" checked><span></span></label></div>
+<div class="setting-row"><div><strong>Clear all tasks</strong><p>Remove all tasks saved in this browser. This cannot be undone.</p></div><button class="btn btn-danger" id="clearTasks" type="button">Clear tasks</button></div>
+</section><p class="muted" style="font-size:11px;margin-top:15px">Your tasks and preferences are saved locally in this browser using Local Storage.</p>
+<footer>Made for a more focused day · FocusFlow © 2026</footer></main></div><script src="app.js"></script></body></html>

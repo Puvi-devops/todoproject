@@ -1,16 +1,5 @@
-.home-card {
-    background: #e8efff;
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 12px;
-    border-left: 5px solid #2563eb;
-}
-
-.home-card h3 {
-    color: #2563eb;
-    margin-bottom: 10px;
-}
-
-.home-card p {
-    line-height: 1.7;
-}
+/* Home dashboard page styles */
+.page-heading { align-items: center; }
+#homeTaskList .task-row { transition: transform .18s ease, border-color .18s ease; }
+#homeTaskList .task-row:hover { transform: translateY(-2px); border-color: var(--primary); }
+#progressFill { transition: width .45s ease; }
